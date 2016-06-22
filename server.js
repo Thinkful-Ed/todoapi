@@ -21,5 +21,7 @@ mongoose.connection.on('connected', function () {
   console.log('Mongoose default connection open to ' + config.db);
 });
 
-app.listen(config.port);
-console.log("App listening on port "+config.port);
+app.listen(config.port, function(){
+  console.log("App listening on port "+config.port);  
+});
+
